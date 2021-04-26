@@ -21,21 +21,9 @@ list_test = ['alexnet',
 # names: rename the experiments so they are easier to undertand
 
 list_system = {
-    "i7-6850K-GeForce_GTX_1080_Ti": ([1], ['GTX 1080Ti']),
-    "i7-9750H-GeForce_RTX_2070_with_Max-Q_Design_XLA_TF1_15": ([1], ['RTX 2070 MAX-Q']),
-    "i7-9750H-GeForce_RTX_2080_with_Max-Q_Design_XLA_TF1_15": ([1], ['RTX 2080 MAX-Q']),
-    "i7-10875H-GeForce_RTX_2080_Super_with_Max-Q_Design_XLA_TF2_2": ([1], ['RTX 2080 SUPER MAX-Q']),
-    "Gold_6230-GeForce_RTX_2080_Ti_NVLink_XLA_trt_TF1_15": ([2, 4, 8], ['2x RTX 2080Ti NVLink', '4x RTX 2080Ti NVLink', '8x RTX 2080Ti NVLink']),
-    "Gold_6230-GeForce_RTX_2080_Ti_XLA_trt_TF1_15": ([1, 2, 4, 8], ['RTX 2080Ti', '2x RTX 2080Ti', '4x RTX 2080Ti', '8x RTX 2080Ti']),
-    "Platinum-Tesla_V100-SXM3-32GB_HP16_TF2_2": ([1, 8], ['V100 32GB', '8x V100 32GB']),
-    "Gold_6230-Quadro_RTX_8000_XLA_trt_TF1_15": ([1, 2, 4, 8], ['RTX 8000', '2x RTX 8000', '4x RTX 8000', '8x RTX 8000']),
-    "Gold_6230-Quadro_RTX_8000_NVLink_XLA_trt_TF1_15": ([2, 4, 8], ['2x RTX 8000 NVLink', '4x RTX 8000 NVLink', '8x RTX 8000 NVLink']),
-    "7502-A100-PCIE-40GB": ([1, 2, 4, 8], ['A100 40GB PCIe', '2x A100 40GB PCIe', '4x A100 40GB PCIe', '8x A100 40GB PCIe']),
-    "3960X-GeForce_RTX_3080_XLA": ([1, 2], ['RTX 3080', '2x RTX 3080']),
-    "3970X-GeForce_RTX_3090_XLA": ([3], ['3x RTX 3090']),
-    "7662-GeForce_RTX_3090": ([1, 2, 4, 8], ['RTX 3090', '2x RTX 3090', '4x RTX 3090', '8x RTX 3090']),
-    "7502-RTX_A6000_XLA_TF1_15": ([1, 2, 4, 8], ['RTX A6000', '2x RTX A6000', '4x RTX A6000', '8x RTX A6000']),
-    "LambdaCloud-RTX_A6000":  ([1, 2, 4], ['Lambda Cloud — RTX A6000', 'Lambda Cloud — 2x RTX A6000', 'Lambda Cloud — 4x RTX A6000'])
+    "7742-A100-SXM4-40GB": ([1, 2, 4, 8], ['NorthernData A100 40GB SXM4', 'NorthernData 2x A100 40GB SXM4', 'NorthernData 4x A100 40GB SXM4', 'NorthernData 8x A100 40GB SXM4'])
+    "7402P-Vega_20":  ([1, 2, 4, 8], ['NorthernData — Mi 50', 'NorthernData — 2x Mi 50', 'NorthernData — 4x Mi 50', 'NorthernData — 8x Mi 50'])
+  
 }
 
 
