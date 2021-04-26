@@ -1,0 +1,106 @@
+2021-03-09 11:48:21.225293: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+WARNING:tensorflow:From /home/ferdinand/.local/lib/python3.8/site-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-03-09 11:48:22.131007: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-03-09 11:48:22.131132: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-03-09 11:48:22.131986: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-03-09 11:48:22.292503: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:0b:00.0 name: A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 38.61GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-03-09 11:48:22.292553: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-09 11:48:22.294928: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-09 11:48:22.294964: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-09 11:48:22.295729: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-03-09 11:48:22.295898: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-03-09 11:48:22.297885: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-03-09 11:48:22.298421: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-03-09 11:48:22.298516: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-09 11:48:22.302805: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-03-09 11:48:22.302828: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-09 11:48:22.762428: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-09 11:48:22.762474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-03-09 11:48:22.762482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-03-09 11:48:22.769254: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 36632 MB memory) -> physical GPU (device: 0, name: A100-SXM4-40GB, pci bus id: 0000:0b:00.0, compute capability: 8.0)
+TensorFlow:  2.4
+Model:       inception4
+Dataset:     imagenet (synthetic)
+Mode:        training
+SingleSess:  False
+Batch size:  112 global
+112 per device
+Num batches: 100
+Num epochs:  0.01
+Devices:     ['/gpu:0']
+NUMA bind:   False
+Data format: NCHW
+Optimizer:   sgd
+Variables:   replicated
+AllReduce:   nccl
+==========
+Generating training model
+/home/ferdinand/.local/lib/python3.8/site-packages/tensorflow/python/keras/legacy_tf_layers/convolutional.py:414: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+warnings.warn('`tf.layers.conv2d` is deprecated and '
+/home/ferdinand/.local/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer_v1.py:1719: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+warnings.warn('`layer.apply` is deprecated and '
+/home/ferdinand/.local/lib/python3.8/site-packages/tensorflow/python/keras/legacy_tf_layers/pooling.py:310: UserWarning: `tf.layers.max_pooling2d` is deprecated and will be removed in a future version. Please use `tf.keras.layers.MaxPooling2D` instead.
+warnings.warn('`tf.layers.max_pooling2d` is deprecated and '
+/home/ferdinand/.local/lib/python3.8/site-packages/tensorflow/python/keras/legacy_tf_layers/pooling.py:236: UserWarning: `tf.layers.average_pooling2d` is deprecated and will be removed in a future version. Please use `tf.keras.layers.AveragePooling2D` instead.
+warnings.warn('`tf.layers.average_pooling2d` is deprecated and '
+/home/ferdinand/.local/lib/python3.8/site-packages/tensorflow/python/keras/legacy_tf_layers/core.py:268: UserWarning: `tf.layers.dropout` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dropout` instead.
+warnings.warn('`tf.layers.dropout` is deprecated and '
+Initializing graph
+WARNING:tensorflow:From /home/ferdinand/lambda-tensorflow-benchmark/benchmarks/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2252: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+W0309 11:48:26.873463 140460471109440 deprecation.py:333] From /home/ferdinand/lambda-tensorflow-benchmark/benchmarks/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2252: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2021-03-09 11:48:27.520965: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-03-09 11:48:27.523433: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:0b:00.0 name: A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 38.61GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-03-09 11:48:27.523466: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-09 11:48:27.523490: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-09 11:48:27.523498: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-09 11:48:27.523506: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-03-09 11:48:27.523515: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-03-09 11:48:27.523523: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-03-09 11:48:27.523531: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-03-09 11:48:27.523539: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-09 11:48:27.527929: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-03-09 11:48:27.527979: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-09 11:48:27.527984: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-03-09 11:48:27.527988: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-03-09 11:48:27.532188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 36632 MB memory) -> physical GPU (device: 0, name: A100-SXM4-40GB, pci bus id: 0000:0b:00.0, compute capability: 8.0)
+2021-03-09 11:48:27.625707: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-03-09 11:48:27.788723: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2250130000 Hz
+2021-03-09 11:48:28.212614: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1642] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+INFO:tensorflow:Running local_init_op.
+I0309 11:48:28.651648 140460471109440 session_manager.py:505] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0309 11:48:28.715600 140460471109440 session_manager.py:508] Done running local_init_op.
+Running warm up
+2021-03-09 11:48:31.653371: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fbc84016020 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-03-09 11:48:31.653431: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): A100-SXM4-40GB, Compute Capability 8.0
+2021-03-09 11:48:32.491040: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-09 11:48:34.203720: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-09 11:48:34.731042: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-09 11:49:10.139669: I tensorflow/compiler/jit/xla_compilation_cache.cc:333] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 605.1 +/- 0.0 (jitter = 0.0)	7.703 1615290554
+10	images/sec: 596.2 +/- 2.5 (jitter = 3.7)	7.684 1615290556
+20	images/sec: 595.9 +/- 2.0 (jitter = 9.3)	7.642 1615290558
+30	images/sec: 596.9 +/- 1.4 (jitter = 7.9)	7.635 1615290560
+40	images/sec: 597.8 +/- 1.2 (jitter = 7.3)	7.700 1615290562
+50	images/sec: 597.4 +/- 1.1 (jitter = 7.4)	7.622 1615290563
+60	images/sec: 597.6 +/- 1.0 (jitter = 7.1)	7.567 1615290565
+70	images/sec: 596.5 +/- 1.0 (jitter = 8.1)	7.653 1615290567
+80	images/sec: 595.5 +/- 1.0 (jitter = 9.4)	7.665 1615290569
+90	images/sec: 595.2 +/- 0.9 (jitter = 10.2)	7.691 1615290571
+100	images/sec: 595.1 +/- 0.9 (jitter = 10.1)	7.635 1615290573
+----------------------------------------------------------------
+total images/sec: 594.83
+----------------------------------------------------------------

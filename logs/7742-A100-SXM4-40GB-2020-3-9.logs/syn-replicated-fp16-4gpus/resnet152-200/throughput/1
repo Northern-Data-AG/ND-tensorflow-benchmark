@@ -1,0 +1,135 @@
+2021-03-09 12:35:11.347816: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+WARNING:tensorflow:From /home/ferdinand/.local/lib/python3.8/site-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-03-09 12:35:12.242207: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-03-09 12:35:12.242315: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-03-09 12:35:12.243028: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-03-09 12:35:13.074072: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:0b:00.0 name: A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 38.61GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-03-09 12:35:13.076150: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties:
+pciBusID: 0000:11:00.0 name: A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 38.61GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-03-09 12:35:13.078214: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 2 with properties:
+pciBusID: 0000:3b:00.0 name: A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 38.61GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-03-09 12:35:13.080257: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 3 with properties:
+pciBusID: 0000:40:00.0 name: A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 38.61GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-03-09 12:35:13.080282: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-09 12:35:13.081984: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-09 12:35:13.082016: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-09 12:35:13.082606: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-03-09 12:35:13.082749: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-03-09 12:35:13.084184: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-03-09 12:35:13.084699: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-03-09 12:35:13.084788: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-09 12:35:13.101117: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1, 2, 3
+2021-03-09 12:35:13.101142: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-09 12:35:14.493413: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-09 12:35:14.493485: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 2 3
+2021-03-09 12:35:14.493492: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N Y Y Y
+2021-03-09 12:35:14.493495: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   Y N Y Y
+2021-03-09 12:35:14.493499: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 2:   Y Y N Y
+2021-03-09 12:35:14.493502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 3:   Y Y Y N
+2021-03-09 12:35:14.506888: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 36632 MB memory) -> physical GPU (device: 0, name: A100-SXM4-40GB, pci bus id: 0000:0b:00.0, compute capability: 8.0)
+2021-03-09 12:35:14.511551: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 36632 MB memory) -> physical GPU (device: 1, name: A100-SXM4-40GB, pci bus id: 0000:11:00.0, compute capability: 8.0)
+2021-03-09 12:35:14.516029: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 36632 MB memory) -> physical GPU (device: 2, name: A100-SXM4-40GB, pci bus id: 0000:3b:00.0, compute capability: 8.0)
+2021-03-09 12:35:14.520499: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 36632 MB memory) -> physical GPU (device: 3, name: A100-SXM4-40GB, pci bus id: 0000:40:00.0, compute capability: 8.0)
+TensorFlow:  2.4
+Model:       resnet152
+Dataset:     imagenet (synthetic)
+Mode:        training
+SingleSess:  False
+Batch size:  800 global
+200 per device
+Num batches: 100
+Num epochs:  0.06
+Devices:     ['/gpu:0', '/gpu:1', '/gpu:2', '/gpu:3']
+NUMA bind:   False
+Data format: NCHW
+Optimizer:   sgd
+Variables:   replicated
+AllReduce:   nccl
+==========
+Generating training model
+/home/ferdinand/.local/lib/python3.8/site-packages/tensorflow/python/keras/legacy_tf_layers/convolutional.py:414: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+warnings.warn('`tf.layers.conv2d` is deprecated and '
+/home/ferdinand/.local/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer_v1.py:1719: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+warnings.warn('`layer.apply` is deprecated and '
+/home/ferdinand/.local/lib/python3.8/site-packages/tensorflow/python/keras/legacy_tf_layers/pooling.py:310: UserWarning: `tf.layers.max_pooling2d` is deprecated and will be removed in a future version. Please use `tf.keras.layers.MaxPooling2D` instead.
+warnings.warn('`tf.layers.max_pooling2d` is deprecated and '
+Initializing graph
+WARNING:tensorflow:From /home/ferdinand/lambda-tensorflow-benchmark/benchmarks/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2252: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+W0309 12:35:35.498006 139653976139584 deprecation.py:333] From /home/ferdinand/lambda-tensorflow-benchmark/benchmarks/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2252: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2021-03-09 12:35:38.524064: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-03-09 12:35:38.526910: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:0b:00.0 name: A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 38.61GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-03-09 12:35:38.529015: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties:
+pciBusID: 0000:11:00.0 name: A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 38.61GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-03-09 12:35:38.531100: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 2 with properties:
+pciBusID: 0000:3b:00.0 name: A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 38.61GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-03-09 12:35:38.533194: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 3 with properties:
+pciBusID: 0000:40:00.0 name: A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 38.61GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-03-09 12:35:38.533225: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-09 12:35:38.533375: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-09 12:35:38.533388: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-09 12:35:38.533397: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-03-09 12:35:38.533407: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-03-09 12:35:38.533417: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-03-09 12:35:38.533432: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-03-09 12:35:38.533441: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-09 12:35:38.550845: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1, 2, 3
+2021-03-09 12:35:38.550939: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-09 12:35:38.550944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 2 3
+2021-03-09 12:35:38.550948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N Y Y Y
+2021-03-09 12:35:38.550952: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   Y N Y Y
+2021-03-09 12:35:38.550955: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 2:   Y Y N Y
+2021-03-09 12:35:38.550958: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 3:   Y Y Y N
+2021-03-09 12:35:38.561477: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 36632 MB memory) -> physical GPU (device: 0, name: A100-SXM4-40GB, pci bus id: 0000:0b:00.0, compute capability: 8.0)
+2021-03-09 12:35:38.563690: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 36632 MB memory) -> physical GPU (device: 1, name: A100-SXM4-40GB, pci bus id: 0000:11:00.0, compute capability: 8.0)
+2021-03-09 12:35:38.565874: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 36632 MB memory) -> physical GPU (device: 2, name: A100-SXM4-40GB, pci bus id: 0000:3b:00.0, compute capability: 8.0)
+2021-03-09 12:35:38.568061: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 36632 MB memory) -> physical GPU (device: 3, name: A100-SXM4-40GB, pci bus id: 0000:40:00.0, compute capability: 8.0)
+2021-03-09 12:35:39.068857: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-03-09 12:35:39.952744: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2250130000 Hz
+2021-03-09 12:35:43.502565: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1642] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+INFO:tensorflow:Running local_init_op.
+I0309 12:35:46.608785 139653976139584 session_manager.py:505] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0309 12:35:48.877000 139653976139584 session_manager.py:508] Done running local_init_op.
+Running warm up
+2021-03-09 12:36:05.380446: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f001c007130 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-03-09 12:36:05.380544: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): A100-SXM4-40GB, Compute Capability 8.0
+2021-03-09 12:36:05.380556: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): A100-SXM4-40GB, Compute Capability 8.0
+2021-03-09 12:36:05.380563: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): A100-SXM4-40GB, Compute Capability 8.0
+2021-03-09 12:36:05.380570: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): A100-SXM4-40GB, Compute Capability 8.0
+2021-03-09 12:36:05.657545: I tensorflow/compiler/jit/xla_compilation_cache.cc:333] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2021-03-09 12:36:06.350577: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-09 12:36:09.742752: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-09 12:36:10.799827: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 3429.0 +/- 0.0 (jitter = 0.0)	8.844 1615293412
+10	images/sec: 3442.5 +/- 8.1 (jitter = 35.5)	8.840 1615293414
+20	images/sec: 3440.8 +/- 5.2 (jitter = 30.7)	8.777 1615293417
+30	images/sec: 3441.0 +/- 3.8 (jitter = 25.5)	8.746 1615293419
+40	images/sec: 3446.3 +/- 3.3 (jitter = 20.6)	8.765 1615293421
+50	images/sec: 3446.2 +/- 3.0 (jitter = 21.3)	8.704 1615293424
+60	images/sec: 3439.3 +/- 4.9 (jitter = 20.7)	8.679 1615293426
+70	images/sec: 3436.4 +/- 4.6 (jitter = 24.4)	8.651 1615293428
+80	images/sec: 3431.9 +/- 4.5 (jitter = 31.8)	8.599 1615293431
+90	images/sec: 3428.2 +/- 4.3 (jitter = 33.6)	8.578 1615293433
+100	images/sec: 3428.6 +/- 3.9 (jitter = 33.2)	8.558 1615293435
+----------------------------------------------------------------
+total images/sec: 3427.35
+----------------------------------------------------------------
