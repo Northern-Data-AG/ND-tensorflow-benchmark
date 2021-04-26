@@ -35,8 +35,8 @@ CPU_NAME="$(lscpu | awk '/Model name:/ {
 }')"
 
 GPU_NAME="${GPU_NAME// /_}"
-
-CONFIG_NAME="${CPU_NAME}-${GPU_NAME}"
+set -- $GPU_NAME
+CONFIG_NAME="${CPU_NAME}-$1"
 echo $CONFIG_NAME
 
 
