@@ -35,8 +35,15 @@ CPU_NAME="$(lscpu | awk '/Model name:/ {
 }')"
 
 GPU_NAME="${GPU_NAME// /_}"
-set -- $GPU_NAME
-CONFIG_NAME="${CPU_NAME}-$1"
+
+
+if installed nvidia-smi; then
+  CONFIG_NAME="${CPU_NAME}-${GPU_NAME}"
+elif installed rocm-smi; then
+  set -- $GPU_NAME
+  CONFIG_NAME="${CPU_NAME}-$1"
+fi
+
 echo $CONFIG_NAME
 
 
