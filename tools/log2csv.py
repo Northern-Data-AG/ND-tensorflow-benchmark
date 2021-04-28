@@ -25,7 +25,7 @@ list_system = {
             "NorthernData 8x A100 40GB SXM4",
         ],
     ),
-    "7402P-Vega_20": (
+    "7402P-Radeon_Instinct_MI50_16GB": (
         [1, 2, 4, 8],
         [
             "NorthernData — Mi 50",
