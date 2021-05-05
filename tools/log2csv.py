@@ -157,7 +157,7 @@ def main():
     parser = argparse.ArgumentParser(description="Gather benchmark results.")
 
     parser.add_argument(
-        "--path", type=str, default="logs", help="path that has the logs"
+        "--path", type=str, default=os.path.abspath("")+"/../logs", help="path that has the logs"
     )
 
     parser.add_argument(
